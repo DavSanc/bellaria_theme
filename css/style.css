@@ -1,0 +1,44 @@
+* {
+    border: 1px dotted red;
+    box-sizing: border-box; /* importante esta propiedad*/
+}
+body {
+    margin: 0;
+}
+/* Mobile First */
+.container {
+    /*Mobile*/
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+ /*establece el breackpoint para el siguiente dispositivo con ando de mas de 567px*/   
+}
+@media  ( min-width: 567px ) {
+    .container {
+        max-width: 540px;   
+    }
+
+    
+}
+@media ( min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media ( min-width: 992px) {
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media ( min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media ( min-width : 1400px){
+    .container {
+        max-width: 1320px;
+    }
+}
