@@ -5,6 +5,18 @@
 body {
     margin: 0;
 }
+
+h1{
+    font-size: 38px;
+    text-align: center;
+}
+
+@media (min-width: 567px ) {
+    h1 {
+        font-size: 32px;
+        text-align: left;
+    }
+}
 /* Mobile First */
 .container {
     /*Mobile*/
@@ -41,4 +53,8 @@ body {
     .container {
         max-width: 1320px;
     }
+}
+
+.main-content .container :not(p) {
+    color: green ;
 }
