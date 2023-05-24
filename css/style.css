@@ -35,16 +35,30 @@ section img {
     box-sizing: border-box;
  /*establece el breackpoint para el siguiente dispositivo con ando de mas de 567px*/   
 }
+#container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .7rem;
+}
+.image {
+    flex-basis: 48%;
+}
+
+
 @media  ( min-width: 567px ) {
     .container {
         max-width: 540px;   
     }
-
     
 }
 @media ( min-width: 768px) {
     .container {
         max-width: 720px;
+    }
+    .image {
+        flex-basis: 22%;
     }
 }
 @media ( min-width: 992px) {
@@ -67,3 +81,14 @@ section img {
 .main-content .container :not(p) {
     color: green ;
 }
+.container {
+    flex-wrap: wrap;
+}
+
+
+
+.image-cupcakes {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
