@@ -72,11 +72,7 @@ section img {
     background: #5fcac7;
     position: relative;
     z-index: 1;
-}
-
-svg.title_bg {
-    position: relative;
-    top: -82px;
+    padding-top: 1rem;
 }
 
 .cards-nuestros-precios {
@@ -87,10 +83,31 @@ svg.title_bg {
     gap: 0.7rem;
 }
 
+.card-nuestros-precios .amount {
+    background: #ff91a4;
+    border-radius: 1rem;
+    display: inline;
+    color: white;
+    padding: 0.1rem 0.8rem;
+    font-size: .8rem;
+}
+
+svg.title_bg {
+    position: relative;
+    top: -82px;
+}
+
+.general-info {
+    text-align: center;
+    position: relative;
+    top: -5rem;
+}
+
 .titulo-torta {
     font-size: 1rem;
     text-align: center;
     color: white;
+    margin-top: 1rem;
 }
 .image-torta {
     max-width: 90%;
@@ -99,6 +116,42 @@ svg.title_bg {
     object-fit: cover;
 }
 
+/* btn btn-ordene-ahora */
+.btn-ordene-ahora {
+    font-size: 22px;
+    width: 200px;
+    line-height: 40px;
+    border-color: #4b4342;
+}
+
+.btn-ordene-ahora::before,
+.btn-ordene-ahora::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    height: 100%;
+    width: 40%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 3px solid;
+    border-color: inherit;
+}
+
+.btn-ordene-ahora span::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -30px;
+    height: 60px;
+    width: 60px;
+    box-sizing: border-box;
+    border: 3px solid;
+    border-radius: 50%;
+    border-color: inherit;
+    transition: all 0.5s;
+}
     
 .container.spikes {
     position: relative;
@@ -120,10 +173,14 @@ svg.title_bg {
     background-position: 0 0;
   }
 
+.card-nuestros-precio .price {
+    font-size: 1.4rem;
+}
+
 .flavors {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 1rem 0;
 }
 
 li.flavor-item {
