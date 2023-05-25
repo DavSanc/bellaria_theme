@@ -42,6 +42,8 @@ section img {
     flex-wrap: wrap;
     gap: 2.5rem;
     color: white;
+    padding: 4rem 0;
+    
 }
 .card.card-features {
     flex-basis: 16%;
@@ -54,6 +56,18 @@ section img {
     width: 100%;
     margin: 0 auto;
     display: block;
+}
+.card-title {
+    font-size: 2rem;
+    text-align: center;
+}
+.card-description {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-align: center;
+}
+.card.card-features {
+    flex-basis: 21%;
 }
 
 @media  ( min-width: 567px ) {
