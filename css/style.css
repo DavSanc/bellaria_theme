@@ -123,9 +123,9 @@ section img {
 }
 
 
+
 .features-cupcakes {
     background-image: url( '../images/background.jpg' );
-    background-repeat: no-repeat;
 }
 .bg-cupcakes {
     padding: 5rem 0 6rem 0;
@@ -134,7 +134,9 @@ section img {
     color: white;
     text-align: center;
 }
+
 .card.card-features {
+    flex-basis: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -146,7 +148,7 @@ section img {
     align-items: center;
     gap: 3rem;
     width: 80%;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto;
 }
 .cupcake-transparency {
     max-width: 80%;
@@ -178,4 +180,24 @@ section img {
 }
 .border-brown:hover {
     border: 3px solid white;
+}
+
+@media ( min-width: 567px ) {
+    .card.card-features {
+        flex-basis: 43%;
+    }
+    .features-cupcakes {
+        background-repeat: no-repeat;
+    }
+    .cupcake-list {
+        margin: 0 auto 2rem auto;
+    }
+}
+@media ( min-width: 768px ) {
+    
+}
+@media ( min-width: 992px ) {
+    .card.card-features {
+        flex-basis: 19%;
+    }
 }
