@@ -35,6 +35,9 @@ section img {
     box-sizing: border-box;
  /*establece el breackpoint para el siguiente dispositivo con ando de mas de 567px*/   
 }
+.bg-cupcakes {
+    background-image: url(./images/background.jpg);
+}
 .cupcake-list {
     display: flex;
     justify-content: center;
@@ -117,4 +120,62 @@ section img {
 
 .background-1 {
     background-image: url( '/images/background.jpg' );
+}
+
+
+.features-cupcakes {
+    background-image: url( '../images/background.jpg' );
+    background-repeat: no-repeat;
+}
+.bg-cupcakes {
+    padding: 5rem 0 6rem 0;
+}
+.bg-bottom-mask {
+    color: white;
+    text-align: center;
+}
+.card.card-features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.cupcake-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    width: 80%;
+    margin: 0 auto 2rem auto;
+}
+.cupcake-transparency {
+    max-width: 80%;
+    width: 100%;
+}
+.card-title {
+    margin: 1.6rem 0 0.6rem 0;
+    font-size: 1.6rem;
+}
+.card-description {
+    line-height: 1.4;
+}
+.btn-cupcake {
+    color: #4B4342;
+    background: white;
+    padding: 0.8rem 0.2rem;
+    font-size: 2rem;
+    border-radius: 3rem;
+    margin: 0.5rem 0;        
+}
+.btn-cupcake:hover {
+    background-color: #4B4342;
+    color: white;
+}
+.border-brown {
+    border: 3px solid #4B4342;
+    border-radius: 2rem;
+    padding: 0.4rem 3rem;
+}
+.border-brown:hover {
+    border: 3px solid white;
 }
