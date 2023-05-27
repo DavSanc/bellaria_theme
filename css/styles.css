@@ -1,13 +1,12 @@
-
-
-
-
+r 
 
 * { 
     border: 1px dotted red;
     box-sizing: border-box; 
+    background-color: #ff91a4;
     
 }
+    
 
 /** tags*/
 body{
@@ -121,7 +120,7 @@ svg.title_bg {
     font-size: 22px;
     width: 200px;
     line-height: 40px;
-    border-color: #4b4342;
+    border-color: #4b4342;git
 }
 
 .btn-ordene-ahora::before,
@@ -187,21 +186,33 @@ li.flavor-item {
     border-bottom: 1px solid #5fcac7;
 }
 
-image-toreno{
-    img 
-        margin-top: auto;
-        max-width: 20rem;
 
-   
     
-}
+
 .imgRedonda {
-    width:200px;
-    height:200px;
+    width:160px;
+    height:160px;
     border-radius:100px;
-      
+   
 }
 
+img.imgRedonda.logo-imagen {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+svg.logo-svg {
+    width: 10rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    position: relative;
+}
 
 #tercio {
     display: inline-block;
