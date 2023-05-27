@@ -1,9 +1,9 @@
-r 
+ 
 
 * { 
-    border: 1px dotted red;
+    border: 1px dotted red; 
     box-sizing: border-box; 
-    background-color: #ff91a4;
+    
     
 }
     
@@ -187,7 +187,7 @@ li.flavor-item {
     border-radius:100px;
    
 }
-@media screen and (min-width: 567px) {
+@media screen and (min-width: 992px) {
      .imgRedonda {
         width:160px;
         height:160px;
@@ -208,7 +208,7 @@ svg.logo-svg {
     left: 50%;
     transform: translateX(-50%);
 }
-@media screen and (min-width: 567px) {
+@media screen and (min-width: 992px) {
     svg.logo-svg {
         width: 10rem;
            
@@ -218,7 +218,35 @@ svg.logo-svg {
 
 .logo {
     position: relative;
+
 }
+.logo.logo-top {
+    display: none;
+    margin: 1.5rem 0;
+}
+
+
+.logo.logo-navbar {
+    display: block;
+}
+.navbar-font a, 
+.input-font {
+    font-family: 'Merienda';
+}
+button.btn-buscar.btn.btn-outline-success {
+    font-family: 'Merienda';
+}
+
+@media screen and (min-width: 992px){
+    .logo.logo-top{
+        display: block;
+    }
+    .logo.logo-navbar {
+        display: none;
+    }
+
+}
+
 
 #tercio {
     display: inline-block;
@@ -229,7 +257,7 @@ svg.logo-svg {
     width: 250px;
  }
 
- #foto{
+ #foto {
     position: absolute;
     top: 20px;
     left: 77px; /* Ajuste */
