@@ -43,17 +43,12 @@ section img {
 /*Mobile firts */
 .container{
     /*Mobile*/
-
     max-width: 100%;
     padding: 0;
     margin: 0 auto;
-    
-    
-    }
+ }
       
-    
  
-
 /*: NOT Excluye la equeta P, debe ser aplicada a la etiqueta padre*/
 .main-content .container :not( p ){
     font-family: 'Merienda', cursive;
@@ -120,7 +115,7 @@ svg.title_bg {
     font-size: 22px;
     width: 200px;
     line-height: 40px;
-    border-color: #4b4342;git
+    border-color: #4b4342;
 }
 
 .btn-ordene-ahora::before,
@@ -184,16 +179,20 @@ svg.title_bg {
 
 li.flavor-item {
     border-bottom: 1px solid #5fcac7;
-}
-
-
-    
+}  
 
 .imgRedonda {
-    width:160px;
-    height:160px;
+    width: 70px;
+    height: 70px;
     border-radius:100px;
    
+}
+@media screen and (min-width: 567px) {
+     .imgRedonda {
+        width:160px;
+        height:160px;
+    }
+    
 }
 
 img.imgRedonda.logo-imagen {
@@ -203,11 +202,18 @@ img.imgRedonda.logo-imagen {
     transform: translateX(-50%);
 }
 svg.logo-svg {
-    width: 10rem;
+    width: 4.3rem;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+}
+@media screen and (min-width: 567px) {
+    svg.logo-svg {
+        width: 10rem;
+           
+    }
+    
 }
 
 .logo {
