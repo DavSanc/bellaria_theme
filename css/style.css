@@ -125,6 +125,7 @@ section img {
 
 
 .features-cupcakes {
+    font-family: 'Merienda';
     background-image: url( '../images/background.jpg' );
 }
 .bg-cupcakes {
@@ -200,4 +201,8 @@ section img {
     .card.card-features {
         flex-basis: 19%;
     }
+}
+
+.card.card-features {
+    background: transparent;
 }
