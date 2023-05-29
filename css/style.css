@@ -1,5 +1,5 @@
 * {
-    border: 1px dotted red;
+    /*border: 1px dotted red;*/
     box-sizing: border-box; /* importante esta propiedad*/
 }
 body {
@@ -104,9 +104,7 @@ section img {
     }
 }
 
-.main-content .container :not(p) {
-    color: green ;
-}
+
 .container {
     flex-wrap: wrap;
 }
@@ -122,6 +120,18 @@ section img {
     background-image: url( '/images/background.jpg' );
 }
 
+.especialidades {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+@media ( min-width: 567px ) {
+    .especialidades {
+        flex-direction: row;
+    }
+}
 
 
 .features-cupcakes {
