@@ -1,0 +1,270 @@
+
+
+
+
+
+* { 
+    border: 1px dotted red;
+    box-sizing: border-box; 
+    
+}
+
+/** tags*/
+body{
+    margin: 0;
+}
+
+h1{
+    font-size: 36px;
+    text-align: center;
+    
+}
+ h2{
+    font-size: 40px;
+    font-family: Merienda One;
+
+}
+
+
+section hgroup {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+section img {
+    max-width: 180px;
+}
+
+
+/* id*/
+
+/*Mobile firts */
+.container{
+    /*Mobile*/
+
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    
+    
+    }
+      
+    
+ 
+
+/*: NOT Excluye la equeta P, debe ser aplicada a la etiqueta padre*/
+.main-content .container :not( p ){
+    font-family: 'Merienda', cursive;
+
+}
+
+.card-nuestros-precios {
+    border: 3px solid #5fcac7;
+    border-radius: 0.6rem;
+    flex-basis: 44%;
+    position: relative;
+}
+
+.card-nuestros-precios hgroup {
+    background: #5fcac7;
+    position: relative;
+    z-index: 1;
+    padding-top: 1rem;
+}
+
+.cards-nuestros-precios {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+.card-nuestros-precios .amount {
+    background: #ff91a4;
+    border-radius: 1rem;
+    display: inline;
+    color: white;
+    padding: 0.1rem 0.8rem;
+    font-size: .8rem;
+}
+
+svg.title_bg {
+    position: relative;
+    top: -82px;
+}
+
+.general-info {
+    text-align: center;
+    position: relative;
+    top: -5rem;
+}
+
+.titulo-torta {
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    margin-top: 1rem;
+}
+.image-torta {
+    max-width: 90%;
+    width: 100%;
+    height: 9rem;
+    object-fit: cover;
+}
+
+/* btn btn-ordene-ahora */
+.btn-ordene-ahora {
+    font-size: 22px;
+    width: 200px;
+    line-height: 40px;
+    border-color: #4b4342;
+}
+
+.btn-ordene-ahora::before,
+.btn-ordene-ahora::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    height: 100%;
+    width: 40%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 3px solid;
+    border-color: inherit;
+}
+
+.btn-ordene-ahora span::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -30px;
+    height: 60px;
+    width: 60px;
+    box-sizing: border-box;
+    border: 3px solid;
+    border-radius: 50%;
+    border-color: inherit;
+    transition: all 0.5s;
+}
+    
+.container.spikes {
+    position: relative;
+    background: #2c3e50;
+    height: 50vh;
+  }
+  
+  .spikes::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: -0%;
+    top: 100%;
+    z-index: 10;
+    display: block;
+    height: 50px;
+    background-size: 50px 100%;
+    background-image: linear-gradient(135deg, #2c3e50 25%, transparent 25%), linear-gradient(225deg, #2c3e50 25%, transparent 25%);
+    background-position: 0 0;
+  }
+
+.card-nuestros-precio .price {
+    font-size: 1.4rem;
+}
+
+.flavors {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+li.flavor-item {
+    border-bottom: 1px solid #5fcac7;
+}
+
+image-toreno{
+    img 
+        margin-top: auto;
+        max-width: 20rem;
+
+   
+    
+}
+.imgRedonda {
+    width:200px;
+    height:200px;
+    border-radius:100px;
+      
+}
+
+
+#tercio {
+    display: inline-block;
+}
+
+#aureola{
+    height: 180px;
+    width: 250px;
+ }
+
+ #foto{
+    position: absolute;
+    top: 20px;
+    left: 77px; /* Ajuste */
+ }
+ #logotoreno{
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 250px;
+    text-align: center;
+ }
+
+/* Media Queries */
+@media ( min-width: 480px ){
+    .container {
+        max-width: 451px;
+    }
+}
+/*establece breakpoint para el siguiente dispositivo con ancho de mas de 567*/
+@media ( min-width: 567px ){
+    .container {
+        max-width: 540px;
+    }
+    h1 { 
+        font-size: 32px;
+        text-align: left;
+    }
+}
+@media ( min-width: 768px) {
+    .container{
+        max-width: 720px;
+    }
+    .card-nuestros-precios {
+        flex-basis: 23%;
+    }
+}  
+@media ( min-width: 992px) {
+    .container{
+        max-width: 960px;
+    }
+}  
+
+@media ( min-width: 1200px) {
+    .container{
+        max-width: 1140px;
+    }
+}  
+
+@media ( min-width: 1400x) {
+    .container{
+        max-width: 1320px;
+    }
+} 
+
+    
