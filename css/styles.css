@@ -55,6 +55,28 @@ section img {
 
 }
 
+
+    
+
+
+
+
+
+
+
+
+/* id*/
+
+/*Mobile firts */
+
+      
+ 
+/*: NOT Excluye la equeta P, debe ser aplicada a la etiqueta padre*/
+.main-content .container :not( p ){
+    font-family: 'Merienda', cursive;
+
+}
+
 .card-nuestros-precios {
     border: 3px solid #5fcac7;
     border-radius: 0.6rem;
@@ -354,5 +376,3 @@ button.btn-buscar.btn.btn-outline-success {
         max-width: 1320px;
     }
 } 
-
-    
